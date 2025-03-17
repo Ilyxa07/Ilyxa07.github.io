@@ -1,0 +1,52 @@
+@import "./reset.css";
+
+.header {
+    display: flex; 
+    justify-content:space-evenly;
+    height: 72px;
+    align-items: center;
+    background-color: rgba(53, 39, 39, 0.089);
+}
+
+.navigation__list {
+ display: flex ;
+ gap: 20px;
+}
+
+.switch {
+position: relative;
+ display: inline-flex;
+ height: 35px;
+ width: 100px;
+ background-color: #d1ecb1;
+ border-radius: 20px;
+ justify-content: center;
+ align-items: center;
+ gap: 25px;
+}
+
+.switch__input {
+    display: none;
+}
+
+.switch__label {
+    z-index: 2;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.switch__label input:checked{
+    display: block;
+}
+
+.switcher {
+    display: inline-block;
+    height: 30px;
+    width: 45px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 1;
+    left: 5px;
+}

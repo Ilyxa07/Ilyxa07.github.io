@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой сайт</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__link">
+        <a href="#home"> Нефедов Илья </a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="nav__home"></li>
+          <li>
+            <a href="#"> Обо мне </a>
+          </li>
+          <li>
+            <a href="#"> Достижения </a>
+          </li>
+          <li>
+            <a href="#"> Навыки </a>
+          </li>
+          <li>
+            <a href="#"> Работа </a>
+          </li>
+          <li>
+            <a href="">Интересы</a>
+          </li>
+          <li>
+            <a href="">Книги</a>
+          </li>
+          <li>
+            <a href="">Связаться</a>
+          </li>
+        </ul>
+      </nav>
 
-<header class="header">
-    <div class="header__link">
-        <a href="#home">
-            
-        </a>
-    </div>
-    <div></div>
-    <div></div>
+      <div class="switch">
+        <label for="ru" class="switch__label">
+          <input
+            type="radio"
+            name="lang"
+            id="ru"
+            checked
+            class="switch__input"
+          />
+          ru
+        </label>
+        <label for="en" class="switch__label">
+          <input type="radio" name="lang" id="en" class="switch__input" />
+          en
+        </label>
+        <div class="switcher"></div>
+      </div>
+    </header>
 
-</header>
-    
-</body>
+    <main>
+      <section class="section__header">
+        <div class="body__center">
+          <h1 class="main__text">Нефедов Илья</h1>
+          <p class="description">
+            Привет! Меня зовут Илья. Я веб-разработчик, давайте знакомиться!
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="description__atme">
+          <h3>Нефедов Илья Юрьевич</h3>
+          <p></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
